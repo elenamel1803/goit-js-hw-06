@@ -8,9 +8,3 @@ for (const element of listEl) {
 
 console.log(`Category: ${titleEl} \nElements: ${itemEl}`); 
 }
-
-
-
-
-
-
