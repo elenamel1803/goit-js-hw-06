@@ -15,9 +15,7 @@ const images = [
 
 const galleryListEl = document.querySelector('.gallery')
 
-images.forEach(image => {
-  const itemEl = `<li><img src = '${image.url}' alt = '${image.alt}'/></li>`
-  galleryListEl.insertAdjacentHTML("beforeend", itemEl);
+const itemEl = images.map(image => `<li><img src = '${image.url}' alt = '${image.alt}'/></li>`).join('')
+galleryListEl.insertAdjacentHTML("beforeend", itemEl);
 
-  console.log(itemEl)
-})
+console.log(itemEl)
